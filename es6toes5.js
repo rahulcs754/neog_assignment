@@ -48,10 +48,7 @@ var customer = {
     product: "Aaalo",
     unitprice: 50
   };
-
-const {name} = customer;
-const {amount,product,unitprice} = card
-var message = `Hello ${name} wants to buy ${amount} ${product} for price of ${unitprice} per piece `;
+var message = `Hello ${customer.name} wants to buy ${card.amount} ${card.product} for price of ${card.unitprice} per piece `;
 
 message // output
 
@@ -115,8 +112,8 @@ var arithmeticsObj = {
 
 
 var arithmeticsObj = {
-    sum: (num1, num2) =>  num1 + num2,
-    multiply:(num1, num2) => num1 * num2
+    sum(num1, num2) =>  num1 + num2,
+    multiply(num1, num2) => num1 * num2
   };
 
 
