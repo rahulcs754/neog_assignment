@@ -73,7 +73,7 @@ console.log(firstName);
 console.log(surname);
 */
 
-var [firstName,surname] = ["MA", "TA", "PA", "CA"];
+let [firstName,surname] = ["MA", "TA", "PA", "CA"];
 
 console.log(firstName);
 console.log(surname);
@@ -98,7 +98,7 @@ var a = 5;
 var b = 10;
 console.log("Fifteen is ".concat(a + b, " and n0t ").concat(2 * a + b, "."));
 */
-var a = 5,b = 10;
+let a = 5,b = 10;
 console.log("Fifteen is ".concat(a + b, " and n0t ").concat(2 * a + b, "."));
 console.log(`Fifteen is ${a+b} and n0t ${2*a+b}. `);
 
@@ -114,7 +114,7 @@ var arithmeticsObj = {
 */
 
 
-var arithmeticsObj = {
+let arithmeticsObj = {
     sum: (num1, num2) =>  num1 + num2,
     multiply:(num1, num2) => num1 * num2
   };
@@ -139,7 +139,7 @@ var operation = avengers.operation,
   members = avengers.members;
 */
 
-var {operation,members} = {
+let {operation,members} = {
     operation: "Assemble",
     members: [
       {
@@ -164,12 +164,12 @@ console.log(members);
 const packIt = (...args) => console.log(args)
 */
 
-function packIt (...args){
-    console.log(args);
+function packIt (list){
+    console.log(list);
 }
 let list = [1,2,3,4,5,6];
 
-packIt(...list);
+packIt(list);
 
 
 /*
