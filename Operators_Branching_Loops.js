@@ -64,22 +64,63 @@ Intermediate Question
 /*
 //Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
 */
- let n = 101;
- let st = '';
- while( n > 0 ) {
+/*
+for (let i = 1; i <= 100; i++) {
+  let out = '';
+  if (i % 3 === 0) out += 'Fizz';
+  if (i % 5 === 0) out += 'Buzz';
+  console.log(out || i);
+}
+*/
 
-  if( n % 3  == 0 ){
-   st = ', Fizz';
-  }else if( n%5 == 0 ){
-  st = ', Buzz';
-  }else{
-   st = n+' ';
+/**
+Print the following star pattern :-
+
+*
+* *
+* * *
+* * * *
+* * * * *
+for( i =1;i <=6;i++ ){
+  sum = sum + '*';
+  console.log(sum);
+}
+
+
+* * * * *
+* * * * 
+* * *
+* * 
+* 
+
+let k , l;
+for( k =5; k > 0;k-- ){
+  let sum1='';
+  for(l = k; l > 0 ; l-- ){
+      sum1 = sum1 + '*';
   }
+   console.log(sum1);
+}
 
-   n-1;
- }
+    *
+   **
+  ***
+ ****
+*****
 
-console.log(st);
+let k , l,clone='';
+for( k =5; k > 0;k-- ){
+  let sum1='';
+  clone = clone + '*';
+  for(l = k-1; l > 0 ; l-- ){
+      sum1 = sum1 + ' ';
+  }
+   console.log(sum1+clone);
+}
+
+
+ */
+
 
 
 
