@@ -13,7 +13,7 @@ console.log(aloo);
 
 */
 // Solved 
-var aloo = 0 ;
+let aloo = 0 ;
 if(aloo == 1) console.log(2)
 
 /*
@@ -24,7 +24,7 @@ var multiply = function(x, y) {
 */
 
 
-var multiply = (x,y) =>  x * y
+const multiply = (x,y) =>  x * y
 console.log(multiply(4,5)); // result 20
 
 
@@ -40,7 +40,7 @@ var card = {
 var message = "Hello " + customer.name + " wants to buy " + card.amount + " " + card.product + " for price of " + card.unitprice + " per piece"
 */
 
-var customer = {
+const customer = {
     name: "Bhaalo"
   };
   var card = {
@@ -51,7 +51,7 @@ var customer = {
 
 const {name} = customer;
 const {amount,product,unitprice} = card
-var message = `Hello ${name} wants to buy ${amount} ${product} for price of ${unitprice} per piece `;
+let  message = `Hello ${name} wants to buy ${amount} ${product} for price of ${unitprice} per piece `;
 
 message // output
 
@@ -60,7 +60,7 @@ var Neog = ["Tanvi", "Swap", "Tanay", "MA", "CA", "PA", "TA"],
 CEO = Neog[0],
 Mentor = Neog[2];
 */
-var [CEO,,Mentor] = ["Tanvi", "Swap", "Tanay", "MA", "CA", "PA", "TA"];
+let [CEO,,Mentor] = ["Tanvi", "Swap", "Tanay", "MA", "CA", "PA", "TA"];
 console.log(CEO);
 console.log(Mentor);
 
@@ -88,8 +88,8 @@ var Obj = {
 };
 */
 
-var Aaloo = "Tasty" , Bhaloo = "Cute";
-var Obj = { Aaloo,Bhaloo};
+let Aaloo = "Tasty" , Bhaloo = "Cute";
+let Obj = { Aaloo,Bhaloo};
 Obj
 
 
@@ -164,9 +164,9 @@ console.log(members);
 const packIt = (...args) => console.log(args)
 */
 
-function packIt (list){
-    console.log(list);
-}
+function packIt (){
+    console.log(Objects.value(arguments));
+}  
 let list = [1,2,3,4,5,6];
 
 packIt(list);
