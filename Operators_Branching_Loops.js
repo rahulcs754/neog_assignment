@@ -121,7 +121,25 @@ for( k =5; k > 0;k-- ){
 
  */
 
+//Write a program to take a number input from user and print multiplication table 12 times for that number.
+/*
+let num = 1;
+const askInput = prompt("enter number");
+while( num < 13  ){
+  console.log(num*askInput);
+  num ++ ;
+}*/
 
+//Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
+/*
+let star =0,next = 1 ,term =0;
 
+for( let i = 0;i < 10;i++ ){
+    console.log(term);
+    star = next;
+    next = term
+    term = star +next;
+}
+*/
 
 
