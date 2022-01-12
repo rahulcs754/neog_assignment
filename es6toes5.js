@@ -165,7 +165,7 @@ const packIt = (...args) => console.log(args)
 */
 
 function packIt (){
-    console.log(Objects.value(arguments));
+  console.log(Object.values(arguments));
 }  
 let list = [1,2,3,4,5,6];
 
