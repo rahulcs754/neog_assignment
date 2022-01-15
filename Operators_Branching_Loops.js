@@ -142,4 +142,25 @@ for( let i = 0;i < 10;i++ ){
 }
 */
 
+/*
+Write a Program to take a number input from user and find if the number is Prime or not.
+A number that divide by itself or with number1
+*/
+/*
+const isPrime = num => {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num > 1;
+}
+*/
+
+//Write a program to take a day as an input and determine whether it is a weekday or weekend. 
+/*
+const userInput = "14/01/22";
+const dateObj = new Date();
+const dayOfWeek = dateObj.getDay();
+
+let result = (dayOfWeek === 6) || (dayOfWeek  === 0) ? "Weekend":'weekday';
+*/
+
 
