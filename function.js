@@ -234,9 +234,9 @@ const sortArray = (list) => {
     
     for (let i =0; i < list.length; i++){
         if(min > list[i+1]){
-            list[i+1] = min;
             list[i]  = list[i+1];
-         }
+            list[i+1] = min; 
+        }
     }
      
     return list;
