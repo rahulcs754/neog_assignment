@@ -182,22 +182,69 @@ Input: minDate('02/05/2021', '24/01/2021') ––> Output: 24/01/2021
 
 
 const minDate = (dateOne,dateTwo) => {
-    
+    let dateOneArr = dateOne.split("/");
+    let [fDay,fMonth,fYear] = dateOneArr;
+    let dateTwoArr = dateTwo.split("/");
+    let [sDay,sMonth,sYear] = dateTwoArr;
+        
+    if( fYear  > sYear){
+        return dateOne;
+    }else if( fMonth > sMonth ){
+        return dateOne;
+    }else if( fDay > sDay){
+        return dateOne;
+    }else{
+        return dateTwo;
+    }
+
+
 }
 
-
+console.log(minDate('02/05/2021', '24/01/2021'));
 
 /*
 Advanced
 Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places. Example:
 Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
 Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
+*/
+
+const encodeString = (str, num) => {
+  console.log(num);
+}
+
+console.log("neogcamp", 2);
+
+/*
 Given a sentence, return a sentence with first letter of all words as capital.
 Example:
 Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
+*/
+
+
+/*
 Given an array of numbers, your function should return an array in the ascending order.
 Example:
 Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+*/
+
+const sortArray = (list) => {
+    
+    let min = list[0];
+    
+    for (let i =0; i < list.length; i++){
+        if(min > list[i+1]){
+            list[i+1] = min;
+            list[i]  = list[i+1];
+         }
+    }
+     
+    return list;
+}
+
+console.log(sortArray([100,83,32,9,45,61]));
+
+/*
 Given a sentence, your function should reverse the order of characters in each word, keeping same sequence of words.
 Example:
 Input: reverseCharactersOfWord('we are neoGrammers') –––> Output: ew era sremmarGoen
