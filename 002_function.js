@@ -215,7 +215,7 @@ const encodeString = (str, num) => {
 
 console.log("neogcamp", 2);
 
-/*
+/*https://pythontutor.com/javascript.html#mode=display
 Given a sentence, return a sentence with first letter of all words as capital.
 Example:
 Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
@@ -226,19 +226,24 @@ Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
 Given an array of numbers, your function should return an array in the ascending order.
 Example:
 Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+Remeber 
+Bubble sort, merge sort, etc 
 */
 
 const sortArray = (list) => {
-    
-    let min = list[0];
-    
+    let done = false;   
+    let temp;
+    while(!done){
+        done = true;
     for (let i =0; i < list.length; i++){
-        if(min > list[i+1]){
-            list[i]  = list[i+1];
-            list[i+1] = min; 
+        if( list[i-1] > list[i] ){
+            done = false;
+             temp = list[i-1];
+            list[i-1] = list[i];
+            list[i] = temp;
         }
     }
-     
+ } 
     return list;
 }
 
@@ -250,3 +255,18 @@ Example:
 Input: reverseCharactersOfWord('we are neoGrammers') –––> Output: ew era sremmarGoen
 
 */
+
+const reverseCharactersOfWord = (str) => {
+    let strArr = str.split(" ");
+    let returnStr = '';
+    for(word of strArr){
+        let r = " ";
+        for(let i = word.length-1; i >= 0; i--){
+            r = r + word[i];
+          }
+          returnStr = returnStr +  r;
+    }
+    return returnStr;
+}
+
+console.log(reverseCharactersOfWord("we are neoGrammers"));
